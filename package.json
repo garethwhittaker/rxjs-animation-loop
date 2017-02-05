@@ -1,6 +1,6 @@
 {
   "name": "rxjs-animation-loop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This module provides a game / animation loop based upon requestAnimationFrame.",
   "author": "Gareth Whittaker <garethwhittaker@hotmail.com>",
   "main": "animation-loop.js",
