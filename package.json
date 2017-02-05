@@ -1,0 +1,24 @@
+{
+  "name": "rxjs-animation-loop",
+  "version": "0.1.0",
+  "description": "This module provides a game / animation loop based upon requestAnimationFrame.",
+  "author": "Gareth Whittaker <garethwhittaker@hotmail.com>",
+  "main": "animation-loop.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garethwhittaker/rxjs-animation-loop"
+  },
+  "bugs": {
+    "url": "https://github.com/garethwhittaker/rxjs-animation-loop/issues"
+  },
+  "keywords": [
+    "animation loop",
+    "game loop",
+    "animationframe",
+    "requestanimationframe"
+  ],
+  "dependencies": {
+    "rxjs": "5.1.0"
+  },
+  "license": "MIT"
+}
