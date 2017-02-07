@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable'
-import { Subject } from 'rxjs/Subject'
+import { BehaviorSubject } from 'rxjs/BehaviorSubject'
 import { animationFrame } from 'rxjs/scheduler/animationFrame'
 import 'rxjs/add/observable/of'
 import 'rxjs/add/observable/never'
@@ -13,7 +13,7 @@ const animationLoop = () => {
 
     const noop = Observable.never()
 
-    const loop = new Subject()
+    const loop = new BehaviorSubject(false)
         .switchMap((active) => active ? frame : noop)
 
     return {
