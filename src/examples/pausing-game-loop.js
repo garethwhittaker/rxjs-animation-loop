@@ -5,7 +5,7 @@ const gameLoop = animationLoop()
 let subscriptionFrameCounter = 0
 
 gameLoop.start()
-console.log('game loop started\n')
+console.log('\ngame loop started\n')
 
 console.log('- subscription starting\n')
 

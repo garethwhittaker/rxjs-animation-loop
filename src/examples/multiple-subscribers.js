@@ -9,7 +9,7 @@ let secondSubscriptionFrameCounter = 0
 const gameLoop = animationLoop()
 
 gameLoop.start()
-console.log('game loop started\n')
+console.log('\ngame loop started\n')
 
 setTimeout(() => {
     console.log('- first subscription starting\n')

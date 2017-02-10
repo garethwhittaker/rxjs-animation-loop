@@ -5,7 +5,7 @@ This module provides a game / animation loop based upon [requestAnimationFrame](
 ## Installation and Usage
 
 ```sh
-npm install rxjs-animation-loop
+npm install rxjs-animation-loop --save
 ```
 
 ```javascript
@@ -26,7 +26,7 @@ gameLoopSubscription.unsubscribe()
 gameLoop.stop()
 ```
 
-More examples have been provided within the `src` directory. See the output of these with:
+Further examples are provided within the `src` directory. See the output of these with:
 
 ```sh
 npm run example-multiple-subscribers
