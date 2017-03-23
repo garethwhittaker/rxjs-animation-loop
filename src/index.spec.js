@@ -33,16 +33,16 @@ test('stop', t => {
 
 test('subscribe', t => {
     const observerStub = sinon.stub()
-    const subscriberStub = sinon.stub()
+    const subscriptionStub = sinon.stub()
 
-    const subscribeStub = sinon.stub(Observable.prototype, 'subscribe').returns(subscriberStub)
+    const subscribeStub = sinon.stub(Observable.prototype, 'subscribe').returns(subscriptionStub)
 
-    const gameLoopSubscriber = gameLoop.subscribe(observerStub)
+    const gameLoopSubscription = gameLoop.subscribe(observerStub)
 
     t.true(subscribeStub.calledOnce)
     t.true(subscribeStub.calledWithExactly(observerStub))
 
-    t.is(gameLoopSubscriber, subscriberStub)
+    t.is(gameLoopSubscription, subscriptionStub)
 
     subscribeStub.restore()
 })

@@ -19,14 +19,14 @@ const gameLoopSubscription = gameLoop.subscribe(() => {
     // code to perform each animation frame
 })
 
-// ... several levels later ...
+// several levels later ...
 
 gameLoopSubscription.unsubscribe()
 
 gameLoop.stop()
 ```
 
-Further examples are provided within the `src` directory. See the output of these with:
+Further examples are provided within the `src` directory. View the output of these with:
 
 ```sh
 npm run example-multiple-subscribers

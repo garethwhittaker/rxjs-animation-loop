@@ -7,14 +7,14 @@ import 'rxjs/add/operator/repeat'
 import 'rxjs/add/operator/switchMap'
 
 const animationLoop = () => {
-    const frame = Observable
+    const source = Observable
         .of(null, animationFrame)
         .repeat()
 
     const noop = Observable.never()
 
     const loop = new BehaviorSubject(false)
-        .switchMap((active) => active ? frame : noop)
+        .switchMap(active => active ? source : noop)
 
     return {
         start() {
