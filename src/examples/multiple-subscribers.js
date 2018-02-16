@@ -1,4 +1,4 @@
-import { animationLoop } from '../'
+import animationLoop from '../'
 
 let firstSubscription
 let firstSubscriptionFrameCounter = 0

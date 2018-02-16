@@ -2,7 +2,7 @@ import test from 'ava'
 import sinon from 'sinon'
 import { Observable } from 'rxjs/Observable'
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'
-import { animationLoop } from '../dist'
+import animationLoop from '../dist'
 
 let nextSpy
 let gameLoop

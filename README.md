@@ -5,11 +5,13 @@ This module provides a game / animation loop based upon [requestAnimationFrame](
 ## Installation and Usage
 
 ```sh
-npm install rxjs-animation-loop --save
+npm install rxjs-animation-loop
 ```
 
+*Note: [rxjs](https://github.com/ReactiveX/rxjs) (5.x) is a [peer dependency](https://nodejs.org/en/blog/npm/peer-dependencies) of this package.*
+
 ```javascript
-import { animationLoop } from 'rxjs-animation-loop'
+import animationLoop from 'rxjs-animation-loop'
 
 const gameLoop = animationLoop()
 

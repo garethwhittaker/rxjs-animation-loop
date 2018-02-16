@@ -5,8 +5,9 @@ import 'rxjs/add/observable/of'
 import 'rxjs/add/observable/never'
 import 'rxjs/add/operator/repeat'
 import 'rxjs/add/operator/switchMap'
+import 'rxjs/add/operator/share'
 
-const animationLoop = () => {
+export default () => {
     const source = Observable
         .of(null, animationFrame)
         .repeat()
@@ -15,6 +16,7 @@ const animationLoop = () => {
 
     const loop = new BehaviorSubject(false)
         .switchMap(active => active ? source : noop)
+        .share()
 
     return {
         start() {
@@ -30,5 +32,3 @@ const animationLoop = () => {
         }
     }
 }
-
-export { animationLoop }

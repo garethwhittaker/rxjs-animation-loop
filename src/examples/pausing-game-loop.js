@@ -1,4 +1,4 @@
-import { animationLoop } from '../'
+import animationLoop from '../'
 
 const gameLoop = animationLoop()
 
