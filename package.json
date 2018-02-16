@@ -1,13 +1,13 @@
 {
   "name": "rxjs-animation-loop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This module provides a game / animation loop based upon requestAnimationFrame.",
   "scripts": {
     "compile": "babel src -d dist",
     "prepare": "npm run compile",
     "test": "ava src/index.spec.js",
-    "example-multiple-subscribers": "npm run compile; node dist/examples/multiple-subscribers.js",
-    "example-pausing-game-loop": "npm run compile; node dist/examples/pausing-game-loop.js"
+    "example-multiple-subscribers": "npm run compile && node dist/examples/multiple-subscribers.js",
+    "example-pausing-game-loop": "npm run compile && node dist/examples/pausing-game-loop.js"
   },
   "author": {
     "name": "Gareth Whittaker"
